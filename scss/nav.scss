@@ -1,0 +1,15 @@
+nav {
+    width: $content-width;
+    height: 154px;
+    background-color: $site-black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+        font-family: mbkaos;
+        font-size: 20px;
+        color: $site-white;
+        text-decoration: none;
+    }
+}

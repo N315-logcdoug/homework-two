@@ -1,0 +1,127 @@
+.locations {
+    width: $content-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $site-offwhite;
+    position: relative;
+
+    .locations-title {
+        font-family: mbkaos;
+        font-size: 40px;
+        color: $site-black;
+    }
+
+    hr {
+        position: absolute;
+        bottom: 186px;
+        height: 4px;
+        width: $content-width;
+        border-style: none;
+        background-color: $site-gray;
+    }
+
+    .locations-map-container {
+        width: 984px;
+        min-height: 406px;
+        display: flex;
+        z-index: 1;
+        margin-top: 38px;
+
+        .map {
+            width: 492px;
+            height: 406px;
+            background-color: $site-white;
+            padding-left: 16px;
+            padding-top: 20px;
+            border-style: solid;
+            border-color: $site-gray;
+            border-width: 4px;
+
+            .map-img {
+                width: 386px;
+                height: 365px;
+                background-image: url(../images/map.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        .map-info {
+            width: 492px;
+            min-height: 406px;
+            display: flex;
+            flex-direction: column;
+
+            .map-info-top {
+                width: 100%;
+                min-height: 203px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-family: mulilight;
+                    font-size: 22px;
+                    color: $site-black;
+                    text-align: center;
+                    width: 312px;
+                }
+            }
+
+            .map-info-bottom {
+                width: 100%;
+                min-height: 203px;
+                padding-top: 45px;
+                padding-left: 24px;
+
+                p {
+                    font-family: mulilight;
+                    font-size: 22px;
+                    color: $site-black;
+                    width: 312px;
+                }
+            }
+        }
+    }
+}
+
+.locations-gallery {
+    width: $content-width;
+    display: flex;
+    justify-content: center;
+    background-color: $site-offwhite;
+
+    .locations-gallery-content {
+        width: 952px;
+        height: 249px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 52px;
+
+        .location-img {
+            width: 227px;
+            height: 159px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .loc1 {
+            background-image: url(../images/hqlocation.jpeg);
+        }
+
+        .loc2 {
+            background-image: url(../images/location2.jpg);
+        }
+
+        .loc3 {
+            background-image: url(../images/location3.jpg);
+        }
+
+        .loc4 {
+            background-image: url(../images/location4.jpg);
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.tour-selection {
+    min-height: 931px;
+    width: $content-width;
+    background-color: $site-offwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tour-selection-container {
+        margin-top: -58px;
+        z-index: 1;
+
+        .tour-selection-row {
+            width: 777px;
+            min-height: 305px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+    
+            .tour-selection-box {
+                width: 237px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .tour-selection-img {
+                    height: 305px;
+                    width: 100%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+    
+                .tour-selection-text {
+                    font-family: mbkaos;
+                    font-size: 25px;
+                    color: $site-gray;
+                    margin-top: 8px;
+                    
+                }
+    
+                .select-img-1 {
+                    background-image: url(../images/parissewers1.jpg);
+                }
+    
+                .select-img-2 {
+                    background-image: url(../images/colognesewers1.jpg);
+                }
+    
+                .select-img-3 {
+                    background-image: url(../images/viennasewers1.jpg);
+                }
+
+                .select-img-4 {
+                    background-image: url(../images/saitamasewers1.jpg);
+                }
+    
+                .select-img-5 {
+                    background-image: url(../images/londonsewers2.jpg);
+                }
+    
+                .select-img-6 {
+                    background-image: url(../images/torontosewers1.jpg);
+                }
+            }
+        }
+    }
+    .tour-selection-dark {
+        width: 100%;
+        height: 340px;
+        background-image: linear-gradient($site-offwhite, $site-black);
+    }
+}

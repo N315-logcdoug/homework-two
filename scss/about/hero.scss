@@ -1,0 +1,64 @@
+.about-hero {
+    height: 776px;
+    background-image: url(../images/sewer-explore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .about-hero-title {
+        z-index: 1;
+        font-family: mbkaos;
+        font-size: 70px;
+        color: $title-color;
+        margin-top: 15px;
+    }
+
+    .about-hero-sub {
+        color: $site-white;
+        font-size: 30px;
+        z-index: 1;
+        font-family: nillya;
+    }
+
+    .about-hero-description {
+        color: $site-white;
+        font-size: 20px;
+        z-index: 1;
+        font-family: mulilight;
+        width: 416px;
+        text-align: center;
+        margin-top: 13px;
+    }
+
+    .about-hero-img {
+        width: 611px;
+        height: 266px;
+        background-image: url(../images/group.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        filter: drop-shadow(3px 3px 12px $site-white);
+        margin-top: 68px;
+    }
+
+    .about-hero-dark {
+        height: 554px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: linear-gradient($site-black,rgba(0,0,0,0));
+    }
+
+    .about-hero-light {
+        height: 554px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-image: linear-gradient(rgba(0,0,0,0),#F0EFF2);
+    }
+}

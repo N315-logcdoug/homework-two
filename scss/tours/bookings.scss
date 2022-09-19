@@ -1,0 +1,121 @@
+.bookings {
+    width: $content-width;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    .booking {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .booking-img {
+            width: 237px;
+            height: 312px;
+            margin-left: 98px;
+            filter: drop-shadow(6px 6px 6px $site-black);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .bk-img-1 {
+            background-image: url(../images/parissewers1.jpg);
+        }
+
+        .bk-img-2 {
+            background-image: url(../images/colognesewers1.jpg);
+        }
+
+        .bk-img-3 {
+            background-image: url(../images/viennasewers1.jpg);
+        }
+
+        .bk-img-4 {
+            background-image: url(../images/saitamasewers1.jpg);
+        }
+
+        .bk-img-5 {
+            background-image: url(../images/londonsewers2.jpg);
+        }
+
+        .bk-img-6 {
+            background-image: url(../images/torontosewers1.jpg);
+        }
+
+        .booking-info {
+            min-width: 410px;
+            min-height: 312px;
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1;
+
+            .booking-title {
+                font-family: mbkaos;
+                font-size: 70px;
+                color: $title-color;
+                margin-bottom: 0;
+            }
+
+            .stars {
+                width: 130px;
+            }
+
+            .booking-desc {
+                width: 409px;
+                font-family: mulilight;
+                font-size: 20px;
+                color: $site-white;
+            }
+
+            .booking-btn {
+                @include button;
+            }
+        }
+
+        .booking-gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient($site-black, rgba($site-black,0.25));
+        }
+        
+    }
+
+    .bg-1 {
+        background-image: url(../images/parissewers2.jpg);
+    }
+
+    .bg-2 {
+        background-image: url(../images/colognesewers2.jpg);
+    }
+
+    .bg-3 {
+        background-image: url(../images/viennasewers2.jpg);
+    }
+
+    .bg-4 {
+        background-image: url(../images/saitamasewers2.jpg);
+    }
+
+    .bg-5 {
+        background-image: url(../images/londonsewers3.jpg);
+    }
+
+    .bg-6 {
+        background-image: url(../images/torontosewers2.jpg);
+    }
+
+    .bookings-bottom-gradient {
+        width: 100%;
+        height: 302px;
+        background-image: linear-gradient($site-black, $site-offwhite);
+    }
+}

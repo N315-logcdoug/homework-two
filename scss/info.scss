@@ -1,0 +1,98 @@
+.info {
+    width: 100%;
+    min-height: 200px;
+    background-color: $site-offwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .info-title {
+        font-family: mbkaos;
+        font-size: 40px;
+        color: $site-black;
+        margin-top: -25px;
+        z-index: 1;
+    }
+
+    .info-text {
+        font-family: mulilight;
+        font-size: 25px;
+        color: $site-black;
+        width: 876px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .info-boxes {
+        width: 826px;
+        min-height: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 28px;
+
+        .info-box {
+            min-height: 305px;
+            width: 237px;
+            z-index: 1;
+            .info-box-img {
+                width: 100%;
+                height: 305px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .info-box-caption {
+                font-family: mbkaos;
+                font-size: 25px;
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            .img-paris-1 {
+                background-image: url(../images/parissewers1.jpg);
+            }
+
+            .img-saitama-1 {
+                background-image: url(../images/saitamasewers1.jpg);
+            }
+
+            .img-cologne-1 {
+                background-image: url(../images/colognesewers1.jpg);
+            }
+
+            .img-history-1 {
+                background-image: url(../images/history1.jpg);
+            }
+
+            .img-history-2 {
+                background-image: url(../images/history2.jpg);
+            }
+
+            .img-history-3 {
+                background-image: url(../images/history3.jpg);
+            }
+        }
+    }
+
+    .info-text-2 {
+        font-family: mulilight;
+        font-size: 25px;
+        color: $site-black;
+        width: 712px;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 56px;
+    }
+
+    .info-box-line {
+        position: absolute;
+        top: 292px;
+        //left: ($content-width - 826px) / -2;
+        height: 4px;
+        width: $content-width;
+        border-style: none;
+        background-color: $site-gray;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin button {
+    width: 262px;
+    height: 68px;
+    background-color: $site-white;
+    border-style: none;
+    color: $site-black;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: mulilight;
+    filter: drop-shadow(3px 3px 12px $site-white);
+}

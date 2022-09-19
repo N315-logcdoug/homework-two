@@ -1,0 +1,93 @@
+.contact-hero {
+    height: 776px;
+    background-image: url(../images/sewer-explore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .contact-hero-title {
+        z-index: 1;
+        font-family: mbkaos;
+        font-size: 70px;
+        color: $title-color;
+        margin-top: 15px;
+    }
+
+    .contact-hero-sub {
+        color: $site-white;
+        font-size: 30px;
+        z-index: 1;
+        font-family: nillya;
+    }
+
+    .contact-hero-description {
+        color: $site-white;
+        font-size: 20px;
+        z-index: 1;
+        font-family: mulilight;
+        width: 416px;
+        text-align: center;
+        margin-top: 13px;
+    }
+
+    .contact-hero-dark {
+        height: 554px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: linear-gradient($site-black,rgba(0,0,0,0));
+    }
+
+    .contact-hero-light {
+        height: 554px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-image: linear-gradient(rgba(0,0,0,0),#F0EFF2);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 361px;
+        z-index: 1;
+
+        .contact-email {
+            width: 100%;
+            height: 51px;
+            background-color: $site-white;
+            border-style: none;
+            font-family: mulilight;
+            font-size: 20px;
+            color: $site-gray;
+            padding-left: 15px;
+            filter: drop-shadow(3px 3px 12px $site-white);
+            margin-top: 61px;
+        }
+
+        .contact-message {
+            width: 100%;
+            height: 212px;
+            background-color: $site-white;
+            border-style: none;
+            font-family: mulilight;
+            font-size: 20px;
+            color: $site-gray;
+            padding-left: 15px;
+            padding-top: 13px;
+            filter: drop-shadow(3px 3px 12px $site-white);
+            margin-top: 18px;
+        }
+
+        .contact-submit {
+            @include button;
+            margin-top: 25px;
+            margin-bottom: 89px;
+        }
+    }
+}
